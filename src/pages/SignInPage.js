@@ -1,12 +1,14 @@
 import styled from "styled-components"
 import { Link, useNavigate } from "react-router-dom"
 import MyWalletLogo from "../components/MyWalletLogo"
-import { useState } from "react"
+import { useContext, useState } from "react"
 import apiAuth from "../services/auth.api.js"
+import { UserContext } from "../contexts/UserContext.js"
 
 export default function SignInPage() {
   const [form, setForm] = useState({ password: "", email: "" })
   const [disabled, setDisabled] = useState(false)
+  const { setUser } = useContext(UserContext)
   const navigate = useNavigate()
 
   function handleForm(e) {
@@ -19,7 +21,9 @@ export default function SignInPage() {
     apiAuth
       .signIn(form)
       .then((res) => {
-        console.log(res.data)
+        const { name, token } = res.data
+        setUser({ name, token })
+        localStorage.setItem("user", JSON.stringify({ name, token }))
         navigate("/home")
       })
       .catch((err) => {
