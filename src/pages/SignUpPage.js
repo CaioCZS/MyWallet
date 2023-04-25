@@ -82,7 +82,7 @@ export default function SignUpPage() {
         </button>
       </form>
 
-      <Link to="/">Já tem uma conta? Entre agora!</Link>
+      <StyledLink to="/">Já tem uma conta? Entre agora!</StyledLink>
     </SingUpContainer>
   )
 }
@@ -93,4 +93,12 @@ const SingUpContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+`
+const StyledLink = styled(Link)`
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: white;
+  text-decoration: none;
+  padding-top: 30px;
 `
