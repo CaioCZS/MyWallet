@@ -49,6 +49,9 @@ export default function TransactionsPage() {
           required
         />
         <button type="submit">Salvar {typeTransaction}</button>
+        <button type="reset" onClick={() => navigate("/home")}>
+          Cancelar
+        </button>
       </form>
     </TransactionsContainer>
   )
@@ -65,4 +68,8 @@ const TransactionsContainer = styled.main`
     align-self: flex-start;
     margin-bottom: 40px;
   }
+`
+
+const SyledButton = styled.button`
+  margin-top: 5px;
 `

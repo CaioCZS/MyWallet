@@ -29,7 +29,6 @@ const ButtonsContainer = styled.section`
   margin-bottom: 0;
   display: flex;
   gap: 15px;
-
   button {
     width: 50%;
     height: 115px;

@@ -5,6 +5,11 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 400;
+
+    }
+    body{
+        background-color: #8c11be;
+        max-height:100vh
     }
     button {
         outline: none;
