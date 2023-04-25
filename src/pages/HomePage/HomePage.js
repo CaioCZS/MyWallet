@@ -3,15 +3,22 @@ import { BiExit } from "react-icons/bi"
 import ButtonsNavigate from "./ButtonsNavigate.js"
 import { useContext } from "react"
 import { UserContext } from "../../contexts/UserContext.js"
+import { useNavigate } from "react-router-dom"
 
 export default function HomePage() {
   const { user } = useContext(UserContext)
-
+  const naviagate = useNavigate()
+  function logout() {
+    if (window.confirm("Deseja mesmo sair?")) {
+      localStorage.clear()
+      naviagate("/")
+    }
+  }
   return (
     <HomeContainer>
       <Header>
         <h1>Olá, {user.name}</h1>
-        <BiExit />
+        <BiExit onClick={logout} />
       </Header>
 
       <TransactionsContainer>
