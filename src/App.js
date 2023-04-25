@@ -1,6 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Routes, Route, useNavigate } from "react-router-dom"
 import styled from "styled-components"
-import HomePage from "./pages/HomePage"
+import HomePage from "./pages/HomePage/HomePage"
 import SignInPage from "./pages/SignInPage"
 import SignUpPage from "./pages/SignUpPage"
 import TransactionsPage from "./pages/TransactionPage"
