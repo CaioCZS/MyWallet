@@ -24,8 +24,18 @@ Esta é uma aplicação web projetada para que indivíduos gerenciem eficienteme
 
 ## Como rodar
 1. Clone este repositório
-2. 
-
-
+2. Instale as dependencias
+   ```
+   npm i
+   ```
+3. Crie as variáveis de ambiente no arquivo .env
+   ```
+      REACT_APP_BASE_URL = https://mywallet-api-y685.onrender.com
+   ```
+4. Run the front-end
+   ```
+   npm start
+   ```
+Finalmente acesse http://localhost:3000 no seu navegador (se tudo ocorrer bem abrirá automaticamente)
 
 
