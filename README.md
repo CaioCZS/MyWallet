@@ -2,7 +2,7 @@
 
 No cenário financeiro constantemente desafiador, acompanhar e gerenciar efetivamente sua renda e despesas é essencial. MyWallet oferece a solução, permitindo que os usuários controlem suas finanças de maneira simples e organizada, sem a complexidade de um banco digital.
 
-<img src="./github/assets/peek-my-wallet18.gif">
+<img src="./assets/peek-my-wallet18.gif">
 
 - Experimente: my-wallet-front-opal.vercel.app
 - Repositório back-end: https://github.com/CaioCZS/my-wallet-api
